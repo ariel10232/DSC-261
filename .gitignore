@@ -1,2 +1,14 @@
 data/
 checkpoints/
+runs/*/checkpoints/
+runs/*/dsmlp_job.log
+__pycache__/
+.DS_Store
+report/*.aux
+report/*.log
+report/*.out
+report/*.bbl
+report/*.blg
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz

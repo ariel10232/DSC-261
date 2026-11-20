@@ -1,0 +1,196 @@
+[18:20:43] device: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb | torch 2.8.0+cu128 | models: ['std_l0.02', 'fgsm_e0.005_l0.02', 'fgsm_e0.01_l0.02', 'pgd_e0.005_l0.02', 'pgd_e0.01_l0.02', 'std_l0.005', 'std_l0.01', 'std_l0.05']
+[18:20:46] originals: train 45,000 | val 5,000 | test 10,000 (paired test = 20,000 images)
+[18:20:46] === std_l0.02: {'strength': 0.02, 'adv': 'none', 'adv_eps': 0.0}
+[18:21:08]   epoch 01/10 | train loss 0.5569 acc 69.20% | val loss 0.3713 acc 83.84% | 17s
+[18:21:22]   epoch 02/10 | train loss 0.2510 acc 89.36% | val loss 0.1863 acc 92.34% | 9s
+[18:21:37]   epoch 03/10 | train loss 0.1251 acc 95.12% | val loss 0.1304 acc 95.42% | 13s
+[18:21:53]   epoch 04/10 | train loss 0.0727 acc 97.35% | val loss 0.0953 acc 96.76% | 13s
+[18:22:06]   epoch 05/10 | train loss 0.0467 acc 98.24% | val loss 0.0967 acc 96.78% | 10s
+[18:22:22]   epoch 06/10 | train loss 0.0309 acc 98.93% | val loss 0.0849 acc 97.38% | 13s
+[18:22:36]   epoch 07/10 | train loss 0.0235 acc 99.23% | val loss 0.0759 acc 97.76% | 10s
+[18:22:47]   epoch 08/10 | train loss 0.0181 acc 99.38% | val loss 0.0802 acc 97.74% | 10s
+[18:22:58]   epoch 09/10 | train loss 0.0152 acc 99.50% | val loss 0.0844 acc 97.68% | 10s
+[18:23:15]   epoch 10/10 | train loss 0.0109 acc 99.67% | val loss 0.0742 acc 97.96% | 13s
+[18:23:16]   selected epoch 10 (score 0.9796)
+[18:23:17]   saved runs/full/checkpoints/std_l0.02.pt (148s)
+[18:23:23]   fgsm eps=0.0025 acc 82.45% TPR 80.67% FPR 15.76% evasion ASR 17.81% PSNR 52.1dB | 3s
+[18:23:26]   fgsm eps=0.005  acc 71.25% TPR 69.36% FPR 26.87% evasion ASR 29.38% PSNR 46.1dB | 2s
+[18:23:28]   fgsm eps=0.01   acc 56.28% TPR 66.58% FPR 54.02% evasion ASR 32.24% PSNR 40.0dB | 2s
+[18:23:31]   fgsm eps=0.02   acc 45.27% TPR 87.18% FPR 96.63% evasion ASR 11.58% PSNR 34.0dB | 2s
+[18:23:33]   fgsm eps=0.03   acc 48.31% TPR 96.33% FPR 99.71% evasion ASR 3.06% PSNR 30.5dB | 2s
+[18:23:49]    pgd eps=0.0025 acc 61.18% TPR 53.75% FPR 31.40% evasion ASR 45.23% PSNR 54.5dB | 15s
+[18:24:04]    pgd eps=0.005  acc 34.74% TPR 24.67% FPR 55.19% evasion ASR 74.86% PSNR 49.0dB | 15s
+[18:24:19]    pgd eps=0.01   acc 10.12% TPR 8.31% FPR 88.06% evasion ASR 91.53% PSNR 43.4dB | 15s
+[18:24:35]    pgd eps=0.02   acc 2.12% TPR 4.08% FPR 99.83% evasion ASR 95.84% PSNR 37.7dB | 15s
+[18:24:50]    pgd eps=0.03   acc 2.79% TPR 5.57% FPR 100.00% evasion ASR 94.32% PSNR 34.3dB | 15s
+[18:24:50]   wrote runs/full/results/std_l0.02.csv (94s)
+[18:24:50] === fgsm_e0.005_l0.02: {'strength': 0.02, 'adv': 'fgsm', 'adv_eps': 0.005}
+[18:25:19]   epoch 01/10 | train loss 0.6935 acc 52.39% | val loss 0.5133 acc 78.80% robust 44.40% | 24s
+[18:25:36]   epoch 02/10 | train loss 0.5365 acc 70.58% | val loss 0.3443 acc 86.08% robust 60.10% | 15s
+[18:25:59]   epoch 03/10 | train loss 0.4345 acc 78.18% | val loss 0.2438 acc 91.16% robust 68.60% | 18s
+[18:26:17]   epoch 04/10 | train loss 0.3743 acc 82.27% | val loss 0.1919 acc 93.50% robust 72.80% | 14s
+[18:26:35]   epoch 05/10 | train loss 0.3365 acc 84.53% | val loss 0.1641 acc 94.44% robust 74.30% | 14s
+[18:26:58]   epoch 06/10 | train loss 0.3085 acc 85.86% | val loss 0.1364 acc 96.14% robust 77.30% | 19s
+[18:27:15]   epoch 07/10 | train loss 0.2890 acc 86.79% | val loss 0.1318 acc 96.10% robust 77.00% | 16s
+[18:27:34]   epoch 08/10 | train loss 0.2686 acc 87.80% | val loss 0.1172 acc 96.96% robust 78.00% | 16s
+[18:27:58]   epoch 09/10 | train loss 0.2531 acc 88.53% | val loss 0.1016 acc 97.02% robust 78.70% | 19s
+[18:28:19]   epoch 10/10 | train loss 0.2325 acc 89.55% | val loss 0.0888 acc 97.44% robust 82.20% | 17s
+[18:28:20]   selected epoch 10 (score 0.8982)
+[18:28:20]   saved runs/full/checkpoints/fgsm_e0.005_l0.02.pt (209s)
+[18:28:24]   fgsm eps=0.0025 acc 88.56% TPR 96.87% FPR 19.74% evasion ASR 2.69% PSNR 52.1dB | 2s
+[18:28:26]   fgsm eps=0.005  acc 80.65% TPR 91.49% FPR 30.19% evasion ASR 8.11% PSNR 46.1dB | 2s
+[18:28:29]   fgsm eps=0.01   acc 65.08% TPR 86.39% FPR 56.23% evasion ASR 13.23% PSNR 40.0dB | 2s
+[18:28:31]   fgsm eps=0.02   acc 48.91% TPR 97.17% FPR 99.34% evasion ASR 2.46% PSNR 34.0dB | 2s
+[18:28:34]   fgsm eps=0.03   acc 49.67% TPR 99.30% FPR 99.96% evasion ASR 0.48% PSNR 30.5dB | 2s
+[18:28:49]    pgd eps=0.0025 acc 81.42% TPR 90.77% FPR 27.92% evasion ASR 8.82% PSNR 54.3dB | 15s
+[18:29:04]    pgd eps=0.005  acc 62.44% TPR 69.87% FPR 44.99% evasion ASR 29.81% PSNR 48.9dB | 15s
+[18:29:20]    pgd eps=0.01   acc 28.39% TPR 32.65% FPR 75.87% evasion ASR 67.20% PSNR 43.2dB | 15s
+[18:29:35]    pgd eps=0.02   acc 8.22% TPR 16.22% FPR 99.77% evasion ASR 83.71% PSNR 37.5dB | 15s
+[18:29:50]    pgd eps=0.03   acc 9.12% TPR 18.23% FPR 100.00% evasion ASR 81.69% PSNR 34.2dB | 15s
+[18:29:51]   wrote runs/full/results/fgsm_e0.005_l0.02.csv (90s)
+[18:29:51] === fgsm_e0.01_l0.02: {'strength': 0.02, 'adv': 'fgsm', 'adv_eps': 0.01}
+[18:30:08]   epoch 01/10 | train loss 0.7049 acc 50.63% | val loss 0.5636 acc 75.92% robust 40.50% | 15s
+[18:30:27]   epoch 02/10 | train loss 0.6042 acc 65.09% | val loss 0.4065 acc 84.80% robust 53.90% | 15s
+[18:30:47]   epoch 03/10 | train loss 0.5263 acc 72.71% | val loss 0.3130 acc 89.88% robust 60.20% | 15s
+[18:31:06]   epoch 04/10 | train loss 0.4771 acc 76.85% | val loss 0.2564 acc 92.56% robust 63.00% | 16s
+[18:31:30]   epoch 05/10 | train loss 0.4396 acc 79.47% | val loss 0.2162 acc 94.42% robust 66.90% | 19s
+[18:31:54]   epoch 06/10 | train loss 0.4105 acc 81.39% | val loss 0.1927 acc 95.60% robust 66.00% | 21s
+[18:32:19]   epoch 07/10 | train loss 0.3879 acc 82.55% | val loss 0.1734 acc 96.20% robust 67.70% | 20s
+[18:32:37]   epoch 08/10 | train loss 0.3721 acc 83.52% | val loss 0.1571 acc 96.54% robust 69.60% | 15s
+[18:32:53]   epoch 09/10 | train loss 0.3655 acc 83.72% | val loss 0.1459 acc 96.94% robust 68.90% | 15s
+[18:33:13]   epoch 10/10 | train loss 0.3589 acc 83.98% | val loss 0.1468 acc 97.26% robust 68.40% | 19s
+[18:33:14]   selected epoch 8 (score 0.8307)
+[18:33:14]   saved runs/full/checkpoints/fgsm_e0.01_l0.02.pt (203s)
+[18:33:17]   fgsm eps=0.0025 acc 86.91% TPR 92.05% FPR 18.23% evasion ASR 6.52% PSNR 52.1dB | 2s
+[18:33:20]   fgsm eps=0.005  acc 80.30% TPR 86.76% FPR 26.16% evasion ASR 11.88% PSNR 46.1dB | 2s
+[18:33:22]   fgsm eps=0.01   acc 68.84% TPR 85.33% FPR 47.66% evasion ASR 13.37% PSNR 40.0dB | 2s
+[18:33:25]   fgsm eps=0.02   acc 49.19% TPR 96.73% FPR 98.35% evasion ASR 2.18% PSNR 34.0dB | 2s
+[18:33:27]   fgsm eps=0.03   acc 49.69% TPR 99.33% FPR 99.95% evasion ASR 0.36% PSNR 30.5dB | 2s
+[18:33:43]    pgd eps=0.0025 acc 79.19% TPR 84.65% FPR 26.27% evasion ASR 14.02% PSNR 54.4dB | 15s
+[18:33:58]    pgd eps=0.005  acc 63.45% TPR 68.53% FPR 41.63% evasion ASR 30.39% PSNR 48.9dB | 15s
+[18:34:13]    pgd eps=0.01   acc 36.58% TPR 45.08% FPR 71.93% evasion ASR 54.21% PSNR 43.4dB | 15s
+[18:34:29]    pgd eps=0.02   acc 20.54% TPR 40.26% FPR 99.19% evasion ASR 59.14% PSNR 37.6dB | 15s
+[18:34:44]    pgd eps=0.03   acc 28.43% TPR 56.84% FPR 99.98% evasion ASR 42.44% PSNR 34.3dB | 15s
+[18:34:44]   wrote runs/full/results/fgsm_e0.01_l0.02.csv (90s)
+[18:34:44] === pgd_e0.005_l0.02: {'strength': 0.02, 'adv': 'pgd', 'adv_eps': 0.005}
+[18:35:52]   epoch 01/10 | train loss 0.7341 acc 38.33% | val loss 0.6965 acc 62.38% robust 10.30% | 63s
+[18:37:05]   epoch 02/10 | train loss 0.6947 acc 48.51% | val loss 0.6816 acc 65.40% robust 21.50% | 71s
+[18:38:16]   epoch 03/10 | train loss 0.6811 acc 58.41% | val loss 0.5919 acc 76.28% robust 48.30% | 66s
+[18:39:23]   epoch 04/10 | train loss 0.6051 acc 70.25% | val loss 0.4482 acc 84.70% robust 60.40% | 63s
+[18:40:29]   epoch 05/10 | train loss 0.5129 acc 78.11% | val loss 0.3471 acc 90.52% robust 67.70% | 63s
+[18:41:40]   epoch 06/10 | train loss 0.4444 acc 83.10% | val loss 0.2675 acc 94.54% robust 74.00% | 68s
+[18:42:43]   epoch 07/10 | train loss 0.4104 acc 85.15% | val loss 0.2286 acc 95.98% robust 72.30% | 62s
+[18:43:49]   epoch 08/10 | train loss 0.4100 acc 84.34% | val loss 0.2129 acc 94.68% robust 69.00% | 65s
+[18:44:53]   epoch 09/10 | train loss 0.4312 acc 81.62% | val loss 0.2157 acc 97.36% robust 62.70% | 63s
+[18:46:05]   epoch 10/10 | train loss 0.4451 acc 79.68% | val loss 0.2160 acc 97.28% robust 59.20% | 71s
+[18:46:05]   selected epoch 6 (score 0.8427)
+[18:46:06]   saved runs/full/checkpoints/pgd_e0.005_l0.02.pt (679s)
+[18:46:09]   fgsm eps=0.0025 acc 85.17% TPR 91.62% FPR 21.28% evasion ASR 5.10% PSNR 56.3dB | 2s
+[18:46:12]   fgsm eps=0.005  acc 79.64% TPR 88.84% FPR 29.56% evasion ASR 7.98% PSNR 50.8dB | 2s
+[18:46:14]   fgsm eps=0.01   acc 66.29% TPR 88.36% FPR 55.78% evasion ASR 8.51% PSNR 45.3dB | 2s
+[18:46:17]   fgsm eps=0.02   acc 47.91% TPR 94.11% FPR 98.30% evasion ASR 2.84% PSNR 39.8dB | 2s
+[18:46:19]   fgsm eps=0.03   acc 48.91% TPR 97.71% FPR 99.90% evasion ASR 0.91% PSNR 36.6dB | 2s
+[18:46:34]    pgd eps=0.0025 acc 81.12% TPR 91.37% FPR 29.13% evasion ASR 5.34% PSNR 54.8dB | 15s
+[18:46:50]    pgd eps=0.005  acc 72.89% TPR 89.06% FPR 43.29% evasion ASR 7.73% PSNR 49.3dB | 15s
+[18:47:05]    pgd eps=0.01   acc 56.24% TPR 85.47% FPR 72.99% evasion ASR 11.55% PSNR 43.6dB | 15s
+[18:47:20]    pgd eps=0.02   acc 43.56% TPR 85.73% FPR 98.61% evasion ASR 12.02% PSNR 37.8dB | 15s
+[18:47:36]    pgd eps=0.03   acc 45.52% TPR 90.90% FPR 99.85% evasion ASR 7.65% PSNR 34.5dB | 15s
+[18:47:36]   wrote runs/full/results/pgd_e0.005_l0.02.csv (90s)
+[18:47:36] === pgd_e0.01_l0.02: {'strength': 0.02, 'adv': 'pgd', 'adv_eps': 0.01}
+[18:48:42]   epoch 01/10 | train loss 0.7451 acc 32.06% | val loss 0.6842 acc 54.38% robust 3.20% | 63s
+[18:49:51]   epoch 02/10 | train loss 0.6906 acc 42.17% | val loss 0.6706 acc 53.66% robust 32.20% | 65s
+[18:50:59]   epoch 03/10 | train loss 0.6815 acc 51.89% | val loss 0.6581 acc 55.36% robust 50.70% | 65s
+[18:52:12]   epoch 04/10 | train loss 0.6749 acc 53.94% | val loss 0.6475 acc 57.08% robust 50.20% | 69s
+[18:53:20]   epoch 05/10 | train loss 0.6692 acc 55.70% | val loss 0.6253 acc 60.36% robust 52.50% | 64s
+[18:54:49]   epoch 06/10 | train loss 0.6581 acc 58.27% | val loss 0.5940 acc 65.30% robust 52.90% | 84s
+[18:55:58]   epoch 07/10 | train loss 0.6459 acc 61.32% | val loss 0.5647 acc 69.38% robust 56.60% | 66s
+[18:57:09]   epoch 08/10 | train loss 0.6324 acc 64.44% | val loss 0.5253 acc 74.98% robust 56.00% | 69s
+[18:58:22]   epoch 09/10 | train loss 0.6199 acc 67.42% | val loss 0.4727 acc 81.86% robust 53.60% | 68s
+[18:59:32]   epoch 10/10 | train loss 0.6120 acc 69.44% | val loss 0.4305 acc 86.30% robust 52.70% | 65s
+[18:59:33]   selected epoch 10 (score 0.6950)
+[18:59:33]   saved runs/full/checkpoints/pgd_e0.01_l0.02.pt (716s)
+[18:59:36]   fgsm eps=0.0025 acc 78.24% TPR 65.11% FPR 8.63% evasion ASR 16.83% PSNR 52.1dB | 2s
+[18:59:39]   fgsm eps=0.005  acc 73.10% TPR 58.23% FPR 12.03% evasion ASR 27.10% PSNR 46.1dB | 2s
+[18:59:41]   fgsm eps=0.01   acc 63.51% TPR 52.83% FPR 25.81% evasion ASR 35.91% PSNR 40.0dB | 2s
+[18:59:44]   fgsm eps=0.02   acc 46.73% TPR 67.15% FPR 73.70% evasion ASR 21.23% PSNR 34.0dB | 2s
+[18:59:46]   fgsm eps=0.03   acc 45.82% TPR 80.48% FPR 88.83% evasion ASR 9.95% PSNR 30.5dB | 2s
+[19:00:02]    pgd eps=0.0025 acc 75.23% TPR 59.63% FPR 9.16% evasion ASR 21.87% PSNR 54.9dB | 15s
+[19:00:17]    pgd eps=0.005  acc 66.32% TPR 45.14% FPR 12.50% evasion ASR 40.90% PSNR 49.3dB | 15s
+[19:00:32]    pgd eps=0.01   acc 52.12% TPR 27.20% FPR 22.97% evasion ASR 64.56% PSNR 43.6dB | 15s
+[19:00:48]    pgd eps=0.02   acc 29.62% TPR 21.00% FPR 61.77% evasion ASR 73.20% PSNR 37.7dB | 15s
+[19:01:03]    pgd eps=0.03   acc 21.00% TPR 24.91% FPR 82.92% evasion ASR 69.04% PSNR 34.2dB | 15s
+[19:01:03]   wrote runs/full/results/pgd_e0.01_l0.02.csv (90s)
+[19:01:03] === std_l0.005: {'strength': 0.005, 'adv': 'none', 'adv_eps': 0.0}
+[19:01:17]   epoch 01/10 | train loss 0.7049 acc 50.67% | val loss 0.7020 acc 50.98% | 10s
+[19:01:31]   epoch 02/10 | train loss 0.6862 acc 54.32% | val loss 0.6969 acc 52.10% | 10s
+[19:01:45]   epoch 03/10 | train loss 0.6732 acc 57.53% | val loss 0.6997 acc 52.00% | 13s
+[19:02:00]   epoch 04/10 | train loss 0.6518 acc 61.02% | val loss 0.6921 acc 55.02% | 11s
+[19:02:16]   epoch 05/10 | train loss 0.6114 acc 65.18% | val loss 0.6703 acc 57.52% | 12s
+[19:02:27]   epoch 06/10 | train loss 0.5672 acc 68.42% | val loss 0.7487 acc 56.62% | 10s
+[19:02:40]   epoch 07/10 | train loss 0.5220 acc 72.27% | val loss 0.6774 acc 60.14% | 10s
+[19:02:53]   epoch 08/10 | train loss 0.4785 acc 75.52% | val loss 0.7639 acc 58.42% | 12s
+[19:03:10]   epoch 09/10 | train loss 0.4285 acc 78.59% | val loss 0.7018 acc 62.10% | 13s
+[19:03:27]   epoch 10/10 | train loss 0.3837 acc 81.72% | val loss 0.7152 acc 62.66% | 12s
+[19:03:28]   selected epoch 10 (score 0.6266)
+[19:03:28]   saved runs/full/checkpoints/std_l0.005.pt (143s)
+[19:03:31]   fgsm eps=0.0025 acc 20.56% TPR 20.73% FPR 79.61% evasion ASR 68.41% PSNR 52.1dB | 2s
+[19:03:34]   fgsm eps=0.005  acc 20.74% TPR 24.74% FPR 83.26% evasion ASR 64.89% PSNR 46.0dB | 2s
+[19:03:36]   fgsm eps=0.01   acc 28.04% TPR 39.90% FPR 83.83% evasion ASR 47.74% PSNR 40.0dB | 2s
+[19:03:39]   fgsm eps=0.02   acc 36.18% TPR 54.94% FPR 82.59% evasion ASR 34.52% PSNR 34.0dB | 2s
+[19:03:41]   fgsm eps=0.03   acc 39.77% TPR 60.27% FPR 80.73% evasion ASR 31.15% PSNR 30.5dB | 2s
+[19:03:56]    pgd eps=0.0025 acc 2.18% TPR 1.63% FPR 97.27% evasion ASR 97.31% PSNR 54.8dB | 15s
+[19:04:12]    pgd eps=0.005  acc 0.94% TPR 0.60% FPR 98.72% evasion ASR 99.05% PSNR 49.2dB | 15s
+[19:04:27]    pgd eps=0.01   acc 0.66% TPR 0.55% FPR 99.23% evasion ASR 99.17% PSNR 43.6dB | 15s
+[19:04:43]    pgd eps=0.02   acc 1.20% TPR 1.57% FPR 99.18% evasion ASR 98.17% PSNR 37.8dB | 15s
+[19:04:58]    pgd eps=0.03   acc 2.02% TPR 2.80% FPR 98.77% evasion ASR 96.67% PSNR 34.3dB | 15s
+[19:04:58]   wrote runs/full/results/std_l0.005.csv (90s)
+[19:04:58] === std_l0.01: {'strength': 0.01, 'adv': 'none', 'adv_eps': 0.0}
+[19:05:13]   epoch 01/10 | train loss 0.6857 acc 55.32% | val loss 0.6449 acc 61.12% | 9s
+[19:05:28]   epoch 02/10 | train loss 0.5736 acc 66.97% | val loss 0.5332 acc 69.12% | 11s
+[19:05:41]   epoch 03/10 | train loss 0.4672 acc 74.51% | val loss 0.4566 acc 75.26% | 10s
+[19:05:57]   epoch 04/10 | train loss 0.3917 acc 79.78% | val loss 0.4104 acc 78.72% | 11s
+[19:06:13]   epoch 05/10 | train loss 0.3224 acc 84.00% | val loss 0.3949 acc 80.82% | 13s
+[19:06:27]   epoch 06/10 | train loss 0.2644 acc 87.37% | val loss 0.3936 acc 81.64% | 10s
+[19:06:40]   epoch 07/10 | train loss 0.2205 acc 89.87% | val loss 0.3460 acc 84.18% | 9s
+[19:06:50]   epoch 08/10 | train loss 0.1802 acc 91.79% | val loss 0.9493 acc 72.52% | 9s
+[19:07:04]   epoch 09/10 | train loss 0.1514 acc 93.25% | val loss 0.3298 acc 87.02% | 10s
+[19:07:14]   epoch 10/10 | train loss 0.1295 acc 94.48% | val loss 0.3649 acc 85.76% | 10s
+[19:07:15]   selected epoch 9 (score 0.8702)
+[19:07:16]   saved runs/full/checkpoints/std_l0.01.pt (133s)
+[19:07:19]   fgsm eps=0.0025 acc 48.18% TPR 51.71% FPR 55.35% evasion ASR 41.67% PSNR 52.1dB | 2s
+[19:07:21]   fgsm eps=0.005  acc 35.16% TPR 46.91% FPR 76.59% evasion ASR 47.44% PSNR 46.1dB | 2s
+[19:07:24]   fgsm eps=0.01   acc 33.95% TPR 62.45% FPR 94.55% evasion ASR 31.09% PSNR 40.0dB | 2s
+[19:07:26]   fgsm eps=0.02   acc 44.20% TPR 86.99% FPR 98.60% evasion ASR 9.42% PSNR 34.0dB | 2s
+[19:07:29]   fgsm eps=0.03   acc 46.55% TPR 91.69% FPR 98.59% evasion ASR 6.23% PSNR 30.5dB | 2s
+[19:07:44]    pgd eps=0.0025 acc 20.64% TPR 20.36% FPR 79.09% evasion ASR 76.83% PSNR 54.6dB | 15s
+[19:08:00]    pgd eps=0.005  acc 5.63% TPR 6.69% FPR 95.42% evasion ASR 92.41% PSNR 49.1dB | 15s
+[19:08:15]    pgd eps=0.01   acc 1.56% TPR 3.02% FPR 99.90% evasion ASR 96.61% PSNR 43.5dB | 15s
+[19:08:30]    pgd eps=0.02   acc 2.15% TPR 4.28% FPR 99.98% evasion ASR 95.24% PSNR 37.8dB | 15s
+[19:08:46]    pgd eps=0.03   acc 3.09% TPR 6.18% FPR 100.00% evasion ASR 93.16% PSNR 34.3dB | 15s
+[19:08:46]   wrote runs/full/results/std_l0.01.csv (90s)
+[19:08:46] === std_l0.05: {'strength': 0.05, 'adv': 'none', 'adv_eps': 0.0}
+[19:08:59]   epoch 01/10 | train loss 0.2971 acc 87.09% | val loss 0.0759 acc 98.14% | 10s
+[19:09:11]   epoch 02/10 | train loss 0.0406 acc 99.00% | val loss 0.0257 acc 99.40% | 9s
+[19:09:26]   epoch 03/10 | train loss 0.0157 acc 99.64% | val loss 0.0146 acc 99.58% | 10s
+[19:09:40]   epoch 04/10 | train loss 0.0102 acc 99.76% | val loss 0.0091 acc 99.84% | 13s
+[19:09:53]   epoch 05/10 | train loss 0.0076 acc 99.80% | val loss 0.0104 acc 99.82% | 12s
+[19:10:04]   epoch 06/10 | train loss 0.0051 acc 99.89% | val loss 0.0069 acc 99.82% | 10s
+[19:10:15]   epoch 07/10 | train loss 0.0041 acc 99.91% | val loss 0.0075 acc 99.82% | 10s
+[19:10:28]   epoch 08/10 | train loss 0.0034 acc 99.92% | val loss 0.0042 acc 99.92% | 10s
+[19:10:43]   epoch 09/10 | train loss 0.0030 acc 99.93% | val loss 0.0051 acc 99.90% | 13s
+[19:10:53]   epoch 10/10 | train loss 0.0022 acc 99.95% | val loss 0.0056 acc 99.86% | 10s
+[19:10:55]   selected epoch 8 (score 0.9992)
+[19:10:55]   saved runs/full/checkpoints/std_l0.05.pt (129s)
+[19:10:58]   fgsm eps=0.0025 acc 98.56% TPR 98.01% FPR 0.88% evasion ASR 1.86% PSNR 52.1dB | 2s
+[19:11:01]   fgsm eps=0.005  acc 97.10% TPR 95.67% FPR 1.46% evasion ASR 4.21% PSNR 46.1dB | 2s
+[19:11:03]   fgsm eps=0.01   acc 93.99% TPR 91.17% FPR 3.18% evasion ASR 8.71% PSNR 40.1dB | 2s
+[19:11:06]   fgsm eps=0.02   acc 86.05% TPR 88.48% FPR 16.38% evasion ASR 11.42% PSNR 34.1dB | 2s
+[19:11:08]   fgsm eps=0.03   acc 67.31% TPR 92.29% FPR 57.67% evasion ASR 7.61% PSNR 30.5dB | 2s
+[19:11:24]    pgd eps=0.0025 acc 94.86% TPR 92.74% FPR 3.01% evasion ASR 7.14% PSNR 54.4dB | 15s
+[19:11:39]    pgd eps=0.005  acc 82.98% TPR 76.11% FPR 10.14% evasion ASR 23.79% PSNR 48.9dB | 15s
+[19:11:54]    pgd eps=0.01   acc 59.55% TPR 47.19% FPR 28.08% evasion ASR 52.75% PSNR 43.3dB | 15s
+[19:12:10]    pgd eps=0.02   acc 27.27% TPR 22.80% FPR 68.27% evasion ASR 77.17% PSNR 37.5dB | 15s
+[19:12:25]    pgd eps=0.03   acc 11.19% TPR 16.39% FPR 94.01% evasion ASR 83.60% PSNR 34.1dB | 15s
+[19:12:25]   wrote runs/full/results/std_l0.05.csv (90s)
+[19:12:25] combined 8 result files -> runs/full/all_results.csv
+[19:12:25] done

@@ -1,0 +1,84 @@
+{
+  "device": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb",
+  "torch": "2.8.0+cu128",
+  "python": "3.11.9",
+  "epochs": 10,
+  "batch_size": 128,
+  "pgd_steps": 10,
+  "attack_eps": [
+    0.0025,
+    0.005,
+    0.01,
+    0.02,
+    0.03
+  ],
+  "attacks": [
+    "fgsm",
+    "pgd"
+  ],
+  "pgd_alpha": "eps/4, random start",
+  "n_train": 45000,
+  "n_val": 5000,
+  "n_test_originals": 10000,
+  "pretrained": true,
+  "model_specs": {
+    "std_l0.02": {
+      "strength": 0.02,
+      "adv": "none",
+      "adv_eps": 0.0
+    },
+    "fgsm_e0.005_l0.02": {
+      "strength": 0.02,
+      "adv": "fgsm",
+      "adv_eps": 0.005
+    },
+    "fgsm_e0.01_l0.02": {
+      "strength": 0.02,
+      "adv": "fgsm",
+      "adv_eps": 0.01
+    },
+    "pgd_e0.005_l0.02": {
+      "strength": 0.02,
+      "adv": "pgd",
+      "adv_eps": 0.005
+    },
+    "pgd_e0.01_l0.02": {
+      "strength": 0.02,
+      "adv": "pgd",
+      "adv_eps": 0.01
+    },
+    "std_l0.005": {
+      "strength": 0.005,
+      "adv": "none",
+      "adv_eps": 0.0
+    },
+    "std_l0.01": {
+      "strength": 0.01,
+      "adv": "none",
+      "adv_eps": 0.0
+    },
+    "std_l0.05": {
+      "strength": 0.05,
+      "adv": "none",
+      "adv_eps": 0.0
+    }
+  },
+  "timings_sec": {
+    "std_l0.02_train": 148.04560327529907,
+    "std_l0.02_eval": 93.74021315574646,
+    "fgsm_e0.005_l0.02_train": 208.69142484664917,
+    "fgsm_e0.005_l0.02_eval": 90.2665650844574,
+    "fgsm_e0.01_l0.02_train": 202.65199828147888,
+    "fgsm_e0.01_l0.02_eval": 90.30805540084839,
+    "pgd_e0.005_l0.02_train": 678.7631175518036,
+    "pgd_e0.005_l0.02_eval": 90.29246735572815,
+    "pgd_e0.01_l0.02_train": 715.9407935142517,
+    "pgd_e0.01_l0.02_eval": 90.34233236312866,
+    "std_l0.005_train": 142.97833895683289,
+    "std_l0.005_eval": 90.36551666259766,
+    "std_l0.01_train": 133.07563471794128,
+    "std_l0.01_eval": 90.36254334449768,
+    "std_l0.05_train": 128.22461676597595,
+    "std_l0.05_eval": 90.35388207435608
+  }
+}
